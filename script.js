@@ -12,12 +12,17 @@ button.addEventListener("click", function() {
     //button.innerHTML= "Spegni";
     //console.log(img.src);
 
+    console.log(img.src) 
+
     if ( img.src.includes("white_lamp.png")) {
         img.src= "./img/yellow_lamp.png" ;
         button.innerHTML= "Spegni";
+        button.classList.toggle("btn-danger")
     } else {
         img.src= "./img/white_lamp.png" ;
         button.innerHTML= "Accendi";
+        button.classList.toggle("btn-danger")
+        
     }
     
 }) ;
