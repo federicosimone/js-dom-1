@@ -1,5 +1,5 @@
 //preparazione dati
-let button = document.querySelector('#bottone')
+let button = document.querySelector('#bottone') ;
 
 
 
@@ -15,7 +15,6 @@ button.addEventListener("click", function() {
     if ( img.src.includes("white_lamp.png")) {
         img.src= "./img/yellow_lamp.png" ;
         button.innerHTML= "Spegni";
-
     } else {
         img.src= "./img/white_lamp.png" ;
         button.innerHTML= "Accendi";
