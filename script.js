@@ -17,11 +17,13 @@ button.addEventListener("click", function() {
 
     if ( img.src.includes("white_lamp.png")) {
         img.src= "./img/yellow_lamp.png" ;
+        img.classList.toggle("mirrored-image")
         button.innerHTML= "Spegni";
         button.classList.toggle("btn-danger") ;
         paragrafo.innerHTML="E luce fu";
     } else {
         img.src= "./img/white_lamp.png" ;
+        img.classList.toggle("mirrored-image")
         button.innerHTML= "Accendi";
         button.classList.toggle("btn-danger") ;
         paragrafo.innerHTML="E' tutto buio";
